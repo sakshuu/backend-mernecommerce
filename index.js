@@ -22,9 +22,10 @@ app.use(cors({
         credentials: true,
         origin:(o, cb) => {
                 const allowed = [
-            "http://localhost:3000",
-            "http://localhost:5173",
-            "http://127.0.0.1:5173",
+                    "https://frontend-ecommerce-w8eb.onrender.com"
+            // "http://localhost:3000",
+            // "http://localhost:5173",
+            // "http://127.0.0.1:5173",
         ]
         if(allowed.indexOf(o) !== -1 || !o){
                 cb(null, true)
